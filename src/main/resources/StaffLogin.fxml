@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaffLoginController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="114.0" style="-fx-background-color: aqua;" />
+        <Label layoutX="129.0" layoutY="33.0" text="Staff Login">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="staffIdTxt" layoutX="129.0" layoutY="123.0" prefHeight="30.0" prefWidth="185.0" promptText="Enter StaffID" />
+        <PasswordField fx:id="passTxt" layoutX="129.0" layoutY="170.0" prefHeight="30.0" prefWidth="185.0" promptText="Enter Password" />
+        <Button fx:id="loginBtn" graphicTextGap="1.0" layoutX="129.0" layoutY="218.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="39.0" prefWidth="75.0" text="Login">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Button fx:id="backBtn" layoutX="508.0" layoutY="29.0" mnemonicParsing="false" onAction="#backHandler" prefHeight="39.0" prefWidth="68.0" text="BACK" />
+      <ImageView fitHeight="274.0" fitWidth="260.0" layoutX="333.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/4542742.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</Pane>
